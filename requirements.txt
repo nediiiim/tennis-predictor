@@ -1,0 +1,20 @@
+# Core Python version
+python==3.11.9
+
+# Data manipulation
+pandas
+numpy
+
+# Visualization
+matplotlib
+seaborn
+
+# Machine Learning
+scikit-learn
+xgboost
+
+# Jupyter 
+jupyter notebook
+
+# Mdel persistence
+joblib
