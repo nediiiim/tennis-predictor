@@ -9,17 +9,22 @@ It demonstrates an **end-to-end data science and machine learning workflow** —
 
 data/  
   raw/ # Original ATP match data  
-  processed/ # Cleaned data used for modeling  
+  processed/ # Cleaned data used for modeling
+  
 models/  
   tennis_match_predictor.pkl # High-accuracy model (not predictive, includes in-match stats)  
   light_model.pkl # Lightweight predictive model  
+  
 metadata/ # Saved metadata (feature columns, win rates, etc.)  
+
 01_data_cleaning.ipynb  
 02_data_processing.ipynb  
 03_EDA.ipynb  
 04_feature_engineering_and_modeling.ipynb  
+
 scripts/  
   predict.py # Script to test lightweight model predictions  
+
 requirements.txt  
 README.md  
 
