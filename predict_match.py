@@ -1,11 +1,11 @@
 import pandas as pd
 import joblib
 
-# === Load model + metadata ===
+# Load model + metadata
 light_model = joblib.load("models/light_model.pkl")
 df_model = pd.read_csv("metadata/df_model_light.csv")
 
-# Load dictionaries you saved (player_win_pct, h2h_wins, etc.)
+# Load dictionaries (player_win_pct, h2h_wins, etc.)
 player_win_pct = joblib.load("metadata/player_win_pct.pkl")
 h2h_wins = joblib.load("metadata/h2h_wins.pkl")
 h2h_matches = joblib.load("metadata/h2h_matches.pkl")
@@ -38,11 +38,11 @@ def predict_match(player, opponent, surface, df_model=df_model, model=light_mode
         player_win, opponent_win, h2h, player_surface, opponent_surface, rank_diff_val
     ]], columns=feature_cols)
 
-    prob = model.predict_proba(X_new)[0][1]  # probability of player winning
+    prob = model.predict_proba(X_new)[0][1]  # Probability of player winning
     return prob
 
 
-# === CLI entry point ===
+
 if __name__ == "__main__":
     player = input("Enter player name: ")
     opponent = input("Enter opponent name: ")
