@@ -15,7 +15,7 @@ It demonstrates an **end-to-end data science and machine learning workflow** —
   - light_model.pkl # Lightweight predictive model  
 - metadata/ # Saved metadata (feature columns, win rates, etc.)  
 - 01_Data_Cleaning.ipynb
-- 02_data_processing.ipynb  
+- 02_Data_processing.ipynb  
 - 03_EDA.ipynb  
 - 04_Feature_Engineering_and_Modeling.ipynb  
 - scripts/  
